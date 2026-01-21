@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+.app {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 12px 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: aquamarine;
+  color: black;
+  width: fit-content;
+}
+
+.layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.form-section {
+  width: 35%;
+}
+
+.style {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(5, 108, 27);
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: gray;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.notes-section {
+  width: 65%;
+}
+
+.notes-section h2 {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.note-card {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("https://plus.unsplash.com/premium_photo-1681488107440-0fbf186e53cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bm90ZSUyMHBhZHxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: 270%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  height: 250px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.note-card h3 {
+  margin-bottom: 5px;
+}
+
+.note-card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.actions {
+  margin-top: auto;
+}
+
+.actions button {
+  width: 100%;
+  background-color: crimson;
+  color: white;
+}
+
+.actions button:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .form-section,
+  .notes-section {
+    width: 100%;
+  }
+
+  .note-card {
+    width: 100%;
+  }
+}
