@@ -19,8 +19,8 @@ const App = () => {
   //localStorage.setItem("user", user);
   //localStorage.setItem("user", JSON.stringify(user));
   //const a = localStorage.getItem("user");
-  const user = JSON.parse(localStorage.getItem("user"));
-  console.log(typeof user);
+  //const user = JSON.parse(localStorage.getItem("user"));
+  //console.log(typeof user);
 
   return (
     <div>
